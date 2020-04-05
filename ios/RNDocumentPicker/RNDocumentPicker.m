@@ -162,7 +162,9 @@ RCT_EXPORT_METHOD(pick:(NSDictionary *)options
             }
         }
         
-        resolve(results);
+        if (self) {
+            resolve(results);
+        }
     }
 }
 
